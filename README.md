@@ -1,6 +1,6 @@
 # Beeb Shop
 
-A new Flutter E-commerce project.
+A new Flutter E-commerce App.
 
 ## Getting Started
 
