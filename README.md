@@ -1,7 +1,7 @@
 # Beeb Shop
 
 A new Flutter E-commerce App.
-[](screenshot)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
