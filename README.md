@@ -1,5 +1,5 @@
 # beeb shop
 
-A new Flutter project.
+A new Flutter E-commerce App.
 
  
