@@ -1,4 +1,4 @@
-# beeb shop
+# Beeb Shop
 
 A new Flutter project.
 
