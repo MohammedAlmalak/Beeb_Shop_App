@@ -6,6 +6,8 @@ import 'package:beeb_shop/auth_Screens/changePass/view/setNewPass.dart';
 import 'package:beeb_shop/auth_Screens/choseWayAuth/view/choseAuthWay.dart';
 import 'package:beeb_shop/auth_Screens/login_screen/view/login.dart';
 import 'package:beeb_shop/auth_Screens/signUp_Screen/view/signUp.dart';
+import 'package:beeb_shop/search/view/search.dart';
+import 'package:beeb_shop/shoppingCart/view/Cart.dart';
 import 'package:get/get.dart' show GetPage; // Transition
 
 import 'routes.dart';
@@ -46,9 +48,13 @@ class AppPages {
       name: Routes.AllCategeroies,
       page: () => AllCategories(),
     ),
-    /*  GetPage(
-      name: Routes.SubCategeroies,
-      page: () => SubCategory(),
-    ), */
+    GetPage(
+      name: Routes.ShoppingCart,
+      page: () => Cart(),
+    ),
+    GetPage(
+      name: Routes.Search,
+      page: () => Search(),
+    ),
   ];
 }

@@ -1,5 +1,6 @@
 import 'package:beeb_shop/helper_Ui/ui_componant.dart';
 import 'package:beeb_shop/items/widget/slider_Image_Item.dart';
+import 'package:beeb_shop/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -41,7 +42,12 @@ class ItemDitails extends StatelessWidget {
                                 color: Color(0xffF4F6FC),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(12.r))),
-                            child: Icon(Icons.shopping_cart_outlined),
+                            child: IconButton(
+                              icon: Icon(Icons.shopping_cart_outlined),
+                              onPressed: () {
+                                Get.toNamed(Routes.ShoppingCart);
+                              },
+                            ),
                           ),
                         ),
                         Positioned(

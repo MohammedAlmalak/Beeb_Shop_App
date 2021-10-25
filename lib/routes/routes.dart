@@ -7,5 +7,6 @@ class Routes {
   static const SetNewPass = '/setnewpass';
   static const HomeService = '/homeservice';
   static const AllCategeroies = '/allcategeroies';
-  // static const SubCategeroies = '/subcategeroies';
+  static const ShoppingCart = '/shoppingcart';
+  static const Search = '/search';
 }
