@@ -20,7 +20,7 @@ class _SubCategoryState extends State<SubCategory> {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         backgroundColor: Color(0xffF4F6FC),
         body: Column(
           children: [
@@ -41,10 +41,7 @@ class _SubCategoryState extends State<SubCategory> {
                           child: Container(
                             width: 40.w,
                             height: 40.h,
-                            decoration: BoxDecoration(
-                                color: Color(0xffF4F6FC),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(12.r))),
+                            decoration: BoxDecoration(color: Color(0xffF4F6FC), borderRadius: BorderRadius.all(Radius.circular(12.r))),
                             child: IconButton(
                               icon: Icon(Icons.shopping_cart_outlined),
                               onPressed: () {
@@ -75,8 +72,7 @@ class _SubCategoryState extends State<SubCategory> {
                       children: [
                         Text(
                           widget.title,
-                          style: TextStyle(
-                              fontSize: 18.sp, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 5.w),
                         IconButton(
@@ -128,8 +124,7 @@ class _SubCategoryState extends State<SubCategory> {
                     ),
                     Text(
                       '23 عنصر',
-                      style: TextStyle(
-                          fontSize: 18.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                     )
                   ],
                 ),

@@ -19,7 +19,7 @@ class _ChoseAuthWayState extends State<ChoseAuthWay> {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         backgroundColor: Color(0xffF6F6F9),
         body: Padding(
           padding: EdgeInsets.symmetric(
@@ -46,9 +46,7 @@ class _ChoseAuthWayState extends State<ChoseAuthWay> {
                 style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20.h),
-              Ui.button(
-                  text: 'تسجيل الدخول',
-                  onPressed: () => Get.toNamed(Routes.LogIn)),
+              Ui.button(text: 'تسجيل الدخول', onPressed: () => Get.toNamed(Routes.LogIn)),
               SizedBox(height: 15.h),
               Container(
                 width: double.infinity,
@@ -59,10 +57,8 @@ class _ChoseAuthWayState extends State<ChoseAuthWay> {
                   ),
                   onPressed: () => Get.toNamed(Routes.SignUp),
                   style: ButtonStyle(
-                    padding: MaterialStateProperty.all<EdgeInsets>(
-                        EdgeInsets.only(top: 6.h, bottom: 6.h)),
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Color(0xffFFFFFF)),
+                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.only(top: 6.h, bottom: 6.h)),
+                    backgroundColor: MaterialStateProperty.all<Color>(Color(0xffFFFFFF)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10.r)),
@@ -116,9 +112,7 @@ class _ChoseAuthWayState extends State<ChoseAuthWay> {
                 onTap: () {
                   Get.offNamedUntil(Routes.HomeService, (route) => false);
                 },
-                child: Text(' تخظي الآن ',
-                    style:
-                        TextStyle(color: Color(0xff628CC6), fontSize: 22.sp)),
+                child: Text(' تخظي الآن ', style: TextStyle(color: Color(0xff628CC6), fontSize: 22.sp)),
               ),
             ],
           ),

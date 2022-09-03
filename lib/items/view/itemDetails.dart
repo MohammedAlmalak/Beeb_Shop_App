@@ -7,8 +7,7 @@ import 'package:get/get.dart';
 
 class ItemDitails extends StatelessWidget {
   ItemDitails({Key? key}) : super(key: key);
-  final description =
-      'تقدم الضحى أرزًا ذهبيًّا عالي الجودة، يناسب الحميات الغذائية والأكلات الصحية. حيث يمتاز بنسبة منخفضة من الكربوهيدرات.';
+  final description = 'تقدم الضحى أرزًا ذهبيًّا عالي الجودة، يناسب الحميات الغذائية والأكلات الصحية. حيث يمتاز بنسبة منخفضة من الكربوهيدرات.';
   final way =
       'غسل الأرز جيداً بالماء إلى أن يصبح لونه شفافاً، ثمّ نقع الأرز في وعاء خلط متوسط بالماء الساخن لمدة خمس عشرة دقيقة. نقع الزعفران في فنجان مع ماء الورد لعدة دقائق. تسخين السمن مع الزيت في قدر متوسط العمق على نار متوسطة ثمّ إضافة الكمون، الكزبرة، الشومر، القرنفل، الفلفل، القرفة وورق الغار وتقليب البهارات حتى تتحمص وتتصاعد الرائحة. رفع الأرز من ماء السلق وسكبه على خليط البهارات مع التحريك لمدة ثلاث دقائق حتى يتشرب النكهات ثمّ إضافة الماء إلى الأرز وتركه على النار العالية إلى أن يغلي ويتشرب الأرز معظم الماء. خفض الحرارة وتغطية القدر وترك الأرز على النار لمدة عشرين دقيقة إلى أن ينضج تماماً.';
 
@@ -16,7 +15,7 @@ class ItemDitails extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         bottomNavigationBar: bottomCartButton(),
         backgroundColor: Color(0xffF4F6FC),
         body: Column(
@@ -38,10 +37,7 @@ class ItemDitails extends StatelessWidget {
                           child: Container(
                             width: 40.w,
                             height: 40.h,
-                            decoration: BoxDecoration(
-                                color: Color(0xffF4F6FC),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(12.r))),
+                            decoration: BoxDecoration(color: Color(0xffF4F6FC), borderRadius: BorderRadius.all(Radius.circular(12.r))),
                             child: IconButton(
                               icon: Icon(Icons.shopping_cart_outlined),
                               onPressed: () {
@@ -72,8 +68,7 @@ class ItemDitails extends StatelessWidget {
                       children: [
                         Text(
                           'تفاصيل المنتج',
-                          style: TextStyle(
-                              fontSize: 18.sp, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                         ),
                         IconButton(
                           onPressed: () => Get.back(),
@@ -93,8 +88,7 @@ class ItemDitails extends StatelessWidget {
                 color: Colors.white,
                 width: double.infinity,
                 child: Padding(
-                  padding:
-                      EdgeInsets.symmetric(vertical: 15.h, horizontal: 15.w),
+                  padding: EdgeInsets.symmetric(vertical: 15.h, horizontal: 15.w),
                   child: SingleChildScrollView(
                     physics: BouncingScrollPhysics(),
                     child: Column(
@@ -102,8 +96,7 @@ class ItemDitails extends StatelessWidget {
                       children: [
                         Text(
                           'التفاصيل',
-                          style: TextStyle(
-                              fontSize: 18.sp, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                         ),
                         //SizedBox(height: 8.h),
                         Text(
@@ -119,8 +112,7 @@ class ItemDitails extends StatelessWidget {
                         SizedBox(height: 15.h),
                         Text(
                           'طريقة التحضير',
-                          style: TextStyle(
-                              fontSize: 18.sp, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                         ),
                         // SizedBox(height: 8.h),
                         Text(

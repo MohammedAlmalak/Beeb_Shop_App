@@ -17,7 +17,7 @@ class _SearchState extends State<Search> {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         backgroundColor: Color(0xffDCF0E8),
         body: Column(
           children: [
@@ -40,10 +40,7 @@ class _SearchState extends State<Search> {
                               child: Container(
                                 width: 40.w,
                                 height: 40.h,
-                                decoration: BoxDecoration(
-                                    color: Color(0xffF4F6FC),
-                                    borderRadius: BorderRadius.all(
-                                        Radius.circular(12.r))),
+                                decoration: BoxDecoration(color: Color(0xffF4F6FC), borderRadius: BorderRadius.all(Radius.circular(12.r))),
                                 child: IconButton(
                                   icon: Icon(Icons.shopping_cart_outlined),
                                   onPressed: () {
@@ -74,8 +71,7 @@ class _SearchState extends State<Search> {
                           children: [
                             Text(
                               'البحث',
-                              style: TextStyle(
-                                  fontSize: 18.sp, fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                             ),
                             SizedBox(width: 5.w),
                             IconButton(

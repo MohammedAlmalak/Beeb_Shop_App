@@ -9,7 +9,7 @@ class SetNewPass extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         backgroundColor: Color(0xffF6F6F9),
         body: SingleChildScrollView(
           physics: ScrollPhysics(
@@ -37,8 +37,7 @@ class SetNewPass extends StatelessWidget {
                 SizedBox(height: 25.h),
                 Text(
                   'كلمة المرور الجديدة',
-                  style:
-                      TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold),
                 ),
                 Text(
                   'قم بإدخال كلمة المرور الجديدة',
@@ -50,8 +49,7 @@ class SetNewPass extends StatelessWidget {
                 SizedBox(height: 20.h),
                 Ui.bassTextFeild(showPass: true, text: 'كلمة المرور الجديدة'),
                 SizedBox(height: 10.h),
-                Ui.bassTextFeild(
-                    showPass: false, text: 'تأكيد كلمة المرور الجديدة'),
+                Ui.bassTextFeild(showPass: false, text: 'تأكيد كلمة المرور الجديدة'),
                 SizedBox(height: 25.h),
                 Ui.button(text: 'حفظ', onPressed: () {}),
                 SizedBox(height: 80.h),

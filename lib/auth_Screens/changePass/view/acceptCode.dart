@@ -11,7 +11,7 @@ class AcceptCode extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         backgroundColor: Color(0xffF6F6F9),
         body: SingleChildScrollView(
           child: Stack(
@@ -48,8 +48,7 @@ class AcceptCode extends StatelessWidget {
                     SizedBox(height: 25.h),
                     Text(
                       'كود التأكيد',
-                      style: TextStyle(
-                          fontSize: 22.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 10.h),
                     Text(

@@ -12,7 +12,7 @@ class HomeService extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
           bottomNavigationBar: BottomNavigationBarWedgit(),
           backgroundColor: Colors.white,
           body: SingleChildScrollView(

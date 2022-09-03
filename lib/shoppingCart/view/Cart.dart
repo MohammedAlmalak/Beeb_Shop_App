@@ -9,7 +9,7 @@ class Cart extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         bottomNavigationBar: bottomAccept(),
         backgroundColor: Color(0xffF4F6FC),
         body: Column(
@@ -25,8 +25,7 @@ class Cart extends StatelessWidget {
                   children: [
                     Text(
                       "عربة التسوق",
-                      style: TextStyle(
-                          fontSize: 18.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(width: 5.w),
                     IconButton(
@@ -61,10 +60,7 @@ class Cart extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.w),
               child: DefaultTextStyle(
-                style: TextStyle(
-                    fontSize: 15.sp,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black),
+                style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.black),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   textDirection: TextDirection.rtl,
@@ -93,10 +89,7 @@ class Cart extends StatelessWidget {
             child: Center(
                 child: Text(
               'متابعة عملية التسوق',
-              style: TextStyle(
-                  fontSize: 18.sp,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
+              style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold, color: Colors.white),
             )),
           )
         ],
@@ -176,15 +169,13 @@ class CartList extends StatelessWidget {
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.red,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(12.r)),
+                                borderRadius: BorderRadius.all(Radius.circular(12.r)),
                               ),
                               child: Padding(
                                 padding: EdgeInsets.all(3.0),
                                 child: Text(
                                   ' 50%',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 10.sp),
+                                  style: TextStyle(color: Colors.white, fontSize: 10.sp),
                                 ),
                               ),
                             ),
@@ -224,8 +215,7 @@ class CartList extends StatelessWidget {
                           Container(
                             decoration: BoxDecoration(
                               color: Color(0xff0C74BC),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(6.r)),
+                              borderRadius: BorderRadius.all(Radius.circular(6.r)),
                             ),
                             height: 25.h,
                             width: 27.h,
@@ -241,8 +231,7 @@ class CartList extends StatelessWidget {
                                 width: 1,
                                 color: Color(0xff0C74BC),
                               ),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(6.r)),
+                              borderRadius: BorderRadius.all(Radius.circular(6.r)),
                             ),
                             width: 50.w,
                             height: 25.h,
@@ -256,8 +245,7 @@ class CartList extends StatelessWidget {
                           Container(
                             decoration: BoxDecoration(
                               color: Color(0xff0C74BC),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(6.r)),
+                              borderRadius: BorderRadius.all(Radius.circular(6.r)),
                             ),
                             height: 25.h,
                             width: 27.w,

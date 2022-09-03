@@ -19,7 +19,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      builder: () => Scaffold(
+      builder: (_, __) => Scaffold(
         backgroundColor: Color(0xffF6F6F9),
         body: SingleChildScrollView(
           child: Stack(
@@ -56,8 +56,7 @@ class _LoginState extends State<Login> {
                     SizedBox(height: 25.h),
                     Text(
                       'تسجيل الدخول',
-                      style: TextStyle(
-                          fontSize: 22.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 20.h),
                     Ui.textFeild(hintText: 'البريد الإلكتروني او رقم الهاتف'),
@@ -123,9 +122,7 @@ class _LoginState extends State<Login> {
                       children: [
                         InkWell(
                           onTap: () => Get.toNamed(Routes.SignUp),
-                          child: Text(' سجل معنا ',
-                              style: TextStyle(
-                                  color: Color(0xff628CC6), fontSize: 17.sp)),
+                          child: Text(' سجل معنا ', style: TextStyle(color: Color(0xff628CC6), fontSize: 17.sp)),
                         ),
                         SizedBox(width: 7.w),
                         Text(
